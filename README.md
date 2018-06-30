@@ -23,9 +23,21 @@ $entries = $client->getEntries();
 
 var_dump($entries);
 
+The result is nothing fancy, but it is taking the data from my space!
 It worked easy and it took a very short time thanks to the guides! :)
 
 This is the file first.php 
+
+I continued working following the guides.
+Let's print just the description of an entry retrieved by id:
+
+$entry = $client->getEntry('5rWcJ6BiM0S2e0g4gUciia');
+echo $entry->getDescription();
+
+Great.
+Trying to understand now a bit more of how this works, I moved to read the API documentation.
+I will then create a space and work on it on my own to see if I have learnt properly!
+
 
 
 
