@@ -35,7 +35,7 @@ $entry = $client->getEntry('5rWcJ6BiM0S2e0g4gUciia');
 echo $entry->getDescription();
 
 Great.
-Trying to understand now a bit more of how this works, I moved to read the API documentation.
+Trying to understand now a bit more of how this works, I moved to read the API documentation, starting from https://www.contentful.com/developers/docs/references/content-delivery-api/ 
 I will then create a space and work on it on my own to see if I have learnt properly!
 
 
