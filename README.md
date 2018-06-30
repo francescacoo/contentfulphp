@@ -50,6 +50,18 @@ I found super easy to add categories to my items! I wasn't sure how the content-
 I added my categories and inserted few items.
 First thing I want to try and display the categories in a top menu.
 
+I used a query to retrieve only the categories:
+
+$query = new \Contentful\Delivery\Query();
+$query->setContentType('category');
+
+$products = $client->getEntries($query);
+
+and then cycled through the result.
+It works :)
+
+I will now make the links display the products for the selected category.
+
 
 
 
