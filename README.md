@@ -1,6 +1,6 @@
 # contentful php
 
-You can find the example website at -> http://francescap.000webhostapp.com
+You can find the example website at -> http://francescap.000webhostapp.com (only the category toys has items)
 
 The code here is shown on index.php
 
