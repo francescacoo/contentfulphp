@@ -1,4 +1,12 @@
-# contentfulphp
+# contentful php
+
+You can find the example website at -> http://francescap.000webhostapp.com
+
+The code here is shown on index.php
+
+The other files where the first tests I have been doing for learning purpose, and below you can find a walk-through :)
+
+---------
 
 First I have been following the lesson at https://the-example-app-php.contentful.com/courses/hello-contentful/lessons/content-management to understand some of the basics for PHP.
 
@@ -9,19 +17,22 @@ require_once 'vendor/autoload.php';
 
 I initialized the client with my token and space id: 
 
+```
 $client = new \Contentful\Delivery\Client(
     '<access_token>',
     '<space_id>'
 );
+```
 
 The first problem I run into was the certificate required for the Curl connection.
 I am using XAMPP so I had to install the certificate and modify the php.ini.
 
 As first example I just connected to the space created with the sample blog and I dumped the results with 
-
+```
 $entries = $client->getEntries();
 
 var_dump($entries);
+```
 
 The result is nothing fancy, but it is taking the data from my space!
 It worked easy and it took a very short time thanks to the guides! :)
@@ -51,16 +62,18 @@ I added my categories and inserted few items.
 First thing I want to try and display the categories in a top menu.
 
 I used a query to retrieve only the categories:
-
+```
 $query = new \Contentful\Delivery\Query();
 $query->setContentType('category');
 
 $products = $client->getEntries($query);
-
+```
 and then cycled through the result.
 It works :)
 
 I will now make the links display the products for the selected category.
+
+This took a bit longer to figure out, the code should have the necessary comments!
 
 
 
