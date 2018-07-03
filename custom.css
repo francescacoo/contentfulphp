@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    padding-top: 50px;
+}
+
+html{
+background-color: transparent;
+background: url("img/collie.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover !important;
+-moz-background-size: cover !important;
+-o-background-size: cover !important;
+background-size: cover !important;
+height:100% !important;
+width: 100% !important;
+left: 0 !important;
+top: 0 !important;
+margin: 0 !important;
+padding: 0 !important;
+opacity: 0.85;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 20px;    
+    left: 50%;
+    height: 14px;
+    margin-left: -10px;
+}
+
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;    
+    background-color: #333;
+    box-shadow: 0 5px 0 #333, 0 10px 0 #333;
+}
+
+.menu {
+    display: none; 
+    width: 100%;
+    padding: 30px 10px 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+.menu ul {
+    margin-bottom: 0;
+}
+.menu a {
+    color: #333; 
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.menu a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+.main-section{
+    padding: 20px 20px 0px 20px;
+
+}
+.image-main-section{
+    margin-bottom:20px;
+    border:1px solid #E8E8E8;
+}
+.img-part{
+    border-radius: 5px;
+    margin:0px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.img-section{
+    padding: 5px;
+}
+.img-section img{
+    width: 100%;
+}
+.image-title h3{
+    margin:0px;
+    color:#4C4C4C;
+    padding: 15px 0px 8px 0px;
+}
+.image-description p{
+    color:#848484;
+}
+.add-cart-btn{
+    border-radius:0px;
+    font-size: 11px;
+    background-color:black;
+}
+
+.col-md-12:nth-of-type(2n+1){
+    clear: left;
+}
+
+.make-xs-column() { float: none; display: inline-block; margin: 0 -0.125em; }
+.make-sm-column() { @media (min-width: @screen-sm-min) { float: none; display: inline-block; margin: 0 -0.125em; } }
+.make-md-column() { @media (min-width: @screen-md-min) { float: none; display: inline-block; margin: 0 -0.125em; } }
+.make-lg-column() { @media (min-width: @screen-lg-min) { float: none; display: inline-block; margin: 0 -0.125em; } }
